@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AnArchos Modding | Official Links</title>
-  <meta name="description" content="Official links, support channels, and modding projects for AnArchos Modding.">
+  <meta name="description" content="Official links, support channels, and Skyrim modding projects for AnArchos Modding.">
   
   <style>
     :root {
@@ -59,7 +59,6 @@
       margin-bottom: 20px;
     }
 
-    /* Dil Değiştirici Switcher */
     .lang-switcher {
       display: flex;
       justify-content: center;
@@ -72,7 +71,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       color: var(--subtext-color);
-      padding: 5px 10px;
+      padding: 5px 12px;
       border-radius: 6px;
       cursor: pointer;
       font-size: 0.8rem;
@@ -86,7 +85,6 @@
       border-color: var(--accent-color);
     }
 
-    /* Link Kartları */
     .links-container {
       display: flex;
       flex-direction: column;
@@ -117,7 +115,20 @@
     .link-label {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
+    }
+
+    .svg-icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+      flex-shrink: 0;
+      transition: color 0.2s ease;
+    }
+
+    .arrow-icon {
+      color: var(--subtext-color);
+      font-size: 0.9rem;
     }
 
     footer {
@@ -130,11 +141,11 @@
 <body>
 
   <div class="container">
-    <!-- Profil Resmi (Görsel URL'ini güncelleyebilirsin) -->
-    <img src="https://github.com/github.png" alt="AnArchos Modding Avatar" class="profile-avatar">
-    
+    <!-- Profil Resmi -->
+    <img src="https://github.com/PhiloSocio.png" alt="AnArchos Modding Avatar" class="profile-avatar">
+
     <h1>AnArchos Modding</h1>
-    <p class="bio" id="bio-text">Mods, Tools & Game Development</p>
+    <p class="bio" id="bio-text">Advanced gameplay systems for Skyrim.</p>
 
     <!-- Dil Seçenekleri -->
     <div class="lang-switcher">
@@ -147,36 +158,76 @@
 
     <!-- Link Listesi -->
     <div class="links-container">
-      <a href="HERE_YOUR_DISCORD_LINK" target="_blank" class="link-card">
-        <span class="link-label">💬 <span id="link-discord">Join Discord Server</span></span> ➔
+      <!-- Discord -->
+      <a href="https://discord.gg/2J6BkP9xWs" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span id="link-discord">Join our Discord</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_PATREON_LINK" target="_blank" class="link-card">
-        <span class="link-label">🧡 <span id="link-patreon">Support on Patreon</span></span> ➔
+      <!-- Patreon -->
+      <a href="https://www.patreon.com/AnArchos" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M15.386.524c-4.764 0-8.64 3.876-8.64 8.64 0 4.75 3.876 8.613 8.64 8.613 4.75 0 8.614-3.864 8.614-8.613C24 4.4 20.136.524 15.386.524M.003 23.525h4.22V.524H.003z"/></svg>
+          <span id="link-patreon">Become a Patron</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_AFDIAN_LINK" target="_blank" class="link-card">
-        <span class="link-label">⚡ <span id="link-afdian">Support on Afdian (爱发电)</span></span> ➔
+      <!-- Afdian -->
+      <a href="YOUR_AFDIAN_LINK" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2L2 13h9l-1 9 10-11h-9l1-9z"/></svg>
+          <span id="link-afdian">Support on Afdian (爱发电)</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_BUYMEACOFFEE_LINK" target="_blank" class="link-card">
-        <span class="link-label">☕ <span id="link-buymeacoffee">Buy Me a Coffee</span></span> ➔
+      <!-- Buy Me a Coffee -->
+      <a href="https://buymeacoffee.com/anarchos" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM2 21h18v2H2z"/></svg>
+          <span id="link-buymeacoffee">Buy Me a Coffee</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_BOOSTY_LINK" target="_blank" class="link-card">
-        <span class="link-label">🚀 <span id="link-boosty">Support on Boosty</span></span> ➔
+      <!-- Boosty -->
+      <a href="https://boosty.to/anarchos" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M13.13 22.19L11.5 16H6l7.87-14.19L12.5 8H18l-4.87 14.19z"/></svg>
+          <span id="link-boosty">Support on Boosty</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_NEXUSMODS_LINK" target="_blank" class="link-card">
-        <span class="link-label">⚔️ <span id="link-nexusmods">NexusMods Profile</span></span> ➔
+      <!-- Nexus Mods -->
+      <a href="https://www.nexusmods.com/profile/AnArchos18" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8L18.8 8 12 11.2 5.2 8 12 4.8zM4 15.5V9.2l7 3.3v6.3l-7-3.3zm16 0l-7 3.3v-6.3l7-3.3v6.3z"/></svg>
+          <span id="link-nexusmods">Nexus Mods</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_GITHUB_LINK" target="_blank" class="link-card">
-        <span class="link-label">💻 <span id="link-github">GitHub Repositories</span></span> ➔
+      <!-- GitHub -->
+      <a href="https://github.com/PhiloSocio" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span id="link-github">GitHub</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
 
-      <a href="HERE_YOUR_YOUTUBE_LINK" target="_blank" class="link-card">
-        <span class="link-label">▶️ <span id="link-youtube">YouTube Channel</span></span> ➔
+      <!-- YouTube -->
+      <a href="https://www.youtube.com/@Godahkiin" target="_blank" class="link-card">
+        <span class="link-label">
+          <svg class="svg-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span id="link-youtube">YouTube Channel</span>
+        </span>
+        <span class="arrow-icon">➔</span>
       </a>
     </div>
 
@@ -188,61 +239,60 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Dil Sözlüğü
     const translations = {
       en: {
-        bio: "Mods, Tools & Game Development",
-        discord: "Join Discord Server",
-        patreon: "Support on Patreon",
+        bio: "Creating immersive Skyrim gameplay experiences.",
+        discord: "Join our Discord",
+        patreon: "Become a Patron",
         afdian: "Support on Afdian (爱发电)",
         buymeacoffee: "Buy Me a Coffee",
         boosty: "Support on Boosty",
-        nexusmods: "NexusMods Profile",
-        github: "GitHub Repositories",
+        nexusmods: "Nexus Mods",
+        github: "GitHub",
         youtube: "YouTube Channel"
       },
       es: {
-        bio: "Mods, Herramientas y Desarrollo de Juegos",
-        discord: "Unirse al Servidor de Discord",
-        patreon: "Apoyar en Patreon",
+        bio: "Creando experiencias inmersivas para Skyrim.",
+        discord: "Únete a nuestro Discord",
+        patreon: "Conviértete en Patron",
         afdian: "Apoyar en Afdian (爱发电)",
-        buymeacoffee: "Invítame un Café",
+        buymeacoffee: "Invítame un café",
         boosty: "Apoyar en Boosty",
-        nexusmods: "Perfil de NexusMods",
-        github: "Repositorios de GitHub",
+        nexusmods: "Nexus Mods",
+        github: "GitHub",
         youtube: "Canal de YouTube"
       },
       ru: {
-        bio: "Моды, инструменты и разработка игр",
-        discord: "Сервер Discord",
-        patreon: "Поддержать на Patreon",
+        bio: "Создание иммерсивного геймплея для Skyrim.",
+        discord: "Присоединиться к Discord",
+        patreon: "Стать патроном",
         afdian: "Поддержать на Afdian (爱发电)",
         buymeacoffee: "Купить мне кофе",
         boosty: "Поддержать на Boosty",
-        nexusmods: "Профиль NexusMods",
-        github: "Репозитории GitHub",
-        youtube: "Канал YouTube"
+        nexusmods: "Nexus Mods",
+        github: "GitHub",
+        youtube: "Канал на YouTube"
       },
       zh: {
-        bio: "MOD、工具与游戏开发",
-        discord: "加入 Discord 服务器",
-        patreon: "在 Patreon 上支持",
-        afdian: "在 爱发电 上支持",
+        bio: "打造沉浸式的《上古卷轴5》游戏体验。",
+        discord: "加入我们的 Discord",
+        patreon: "成为赞助者 (Patreon)",
+        afdian: "在爱发电上支持",
         buymeacoffee: "请我喝杯咖啡",
         boosty: "在 Boosty 上支持",
-        nexusmods: "NexusMods 主页",
-        github: "GitHub 项目库",
+        nexusmods: "Nexus Mods",
+        github: "GitHub",
         youtube: "YouTube 频道"
       },
       ja: {
-        bio: "MOD、ツール＆ゲーム開発",
-        discord: "Discord サーバーに参加",
-        patreon: "Patreon で支援",
+        bio: "Skyrim の没入型ゲーム体験を制作。",
+        discord: "Discord に参加",
+        patreon: "Patreon でパトロンになる",
         afdian: "Afdian (爱发电) で支援",
-        buymeacoffee: "Coffee を奢る",
+        buymeacoffee: "Buy Me a Coffee",
         boosty: "Boosty で支援",
-        nexusmods: "NexusMods ページ",
-        github: "GitHub リポジトリ",
+        nexusmods: "Nexus Mods",
+        github: "GitHub",
         youtube: "YouTube チャンネル"
       }
     };
@@ -261,7 +311,6 @@
       document.getElementById('link-github').textContent = data.github;
       document.getElementById('link-youtube').textContent = data.youtube;
 
-      // Butonların aktiflik durumunu güncelle
       document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
         if (btn.textContent.toLowerCase() === lang) {
