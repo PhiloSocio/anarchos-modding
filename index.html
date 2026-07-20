@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnArchos Modding | Official Links</title>
+  <meta name="description" content="Official links, support channels, and modding projects for AnArchos Modding.">
+  
+  <style>
+    :root {
+      --bg-color: #0d0f12;
+      --card-bg: #161920;
+      --card-hover: #212633;
+      --border-color: #2a303f;
+      --text-color: #f0f2f5;
+      --subtext-color: #94a3b8;
+      --accent-color: #6366f1;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    .profile-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 3px solid var(--accent-color);
+      margin-bottom: 16px;
+      object-fit: cover;
+      background-color: var(--card-bg);
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: -0.5px;
+    }
+
+    p.bio {
+      color: var(--subtext-color);
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    /* Dil Değiştirici Switcher */
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 28px;
+      flex-wrap: wrap;
+    }
+
+    .lang-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      color: var(--subtext-color);
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--accent-color);
+      color: #fff;
+      border-color: var(--accent-color);
+    }
+
+    /* Link Kartları */
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 20px;
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .link-card:hover {
+      background: var(--card-hover);
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+
+    .link-label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    footer {
+      margin-top: 36px;
+      font-size: 0.8rem;
+      color: var(--subtext-color);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Profil Resmi (Görsel URL'ini güncelleyebilirsin) -->
+    <img src="https://github.com/github.png" alt="AnArchos Modding Avatar" class="profile-avatar">
+    
+    <h1>AnArchos Modding</h1>
+    <p class="bio" id="bio-text">Mods, Tools & Game Development</p>
+
+    <!-- Dil Seçenekleri -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+      <button class="lang-btn" onclick="setLanguage('es')">ES</button>
+      <button class="lang-btn" onclick="setLanguage('ru')">RU</button>
+      <button class="lang-btn" onclick="setLanguage('zh')">ZH</button>
+      <button class="lang-btn" onclick="setLanguage('ja')">JA</button>
+    </div>
+
+    <!-- Link Listesi -->
+    <div class="links-container">
+      <a href="HERE_YOUR_DISCORD_LINK" target="_blank" class="link-card">
+        <span class="link-label">💬 <span id="link-discord">Join Discord Server</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_PATREON_LINK" target="_blank" class="link-card">
+        <span class="link-label">🧡 <span id="link-patreon">Support on Patreon</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_AFDIAN_LINK" target="_blank" class="link-card">
+        <span class="link-label">⚡ <span id="link-afdian">Support on Afdian (爱发电)</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_BUYMEACOFFEE_LINK" target="_blank" class="link-card">
+        <span class="link-label">☕ <span id="link-buymeacoffee">Buy Me a Coffee</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_BOOSTY_LINK" target="_blank" class="link-card">
+        <span class="link-label">🚀 <span id="link-boosty">Support on Boosty</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_NEXUSMODS_LINK" target="_blank" class="link-card">
+        <span class="link-label">⚔️ <span id="link-nexusmods">NexusMods Profile</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_GITHUB_LINK" target="_blank" class="link-card">
+        <span class="link-label">💻 <span id="link-github">GitHub Repositories</span></span> ➔
+      </a>
+
+      <a href="HERE_YOUR_YOUTUBE_LINK" target="_blank" class="link-card">
+        <span class="link-label">▶️ <span id="link-youtube">YouTube Channel</span></span> ➔
+      </a>
+    </div>
+
+    <footer>
+      © <span id="year"></span> AnArchos Modding. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Dil Sözlüğü
+    const translations = {
+      en: {
+        bio: "Mods, Tools & Game Development",
+        discord: "Join Discord Server",
+        patreon: "Support on Patreon",
+        afdian: "Support on Afdian (爱发电)",
+        buymeacoffee: "Buy Me a Coffee",
+        boosty: "Support on Boosty",
+        nexusmods: "NexusMods Profile",
+        github: "GitHub Repositories",
+        youtube: "YouTube Channel"
+      },
+      es: {
+        bio: "Mods, Herramientas y Desarrollo de Juegos",
+        discord: "Unirse al Servidor de Discord",
+        patreon: "Apoyar en Patreon",
+        afdian: "Apoyar en Afdian (爱发电)",
+        buymeacoffee: "Invítame un Café",
+        boosty: "Apoyar en Boosty",
+        nexusmods: "Perfil de NexusMods",
+        github: "Repositorios de GitHub",
+        youtube: "Canal de YouTube"
+      },
+      ru: {
+        bio: "Моды, инструменты и разработка игр",
+        discord: "Сервер Discord",
+        patreon: "Поддержать на Patreon",
+        afdian: "Поддержать на Afdian (爱发电)",
+        buymeacoffee: "Купить мне кофе",
+        boosty: "Поддержать на Boosty",
+        nexusmods: "Профиль NexusMods",
+        github: "Репозитории GitHub",
+        youtube: "Канал YouTube"
+      },
+      zh: {
+        bio: "MOD、工具与游戏开发",
+        discord: "加入 Discord 服务器",
+        patreon: "在 Patreon 上支持",
+        afdian: "在 爱发电 上支持",
+        buymeacoffee: "请我喝杯咖啡",
+        boosty: "在 Boosty 上支持",
+        nexusmods: "NexusMods 主页",
+        github: "GitHub 项目库",
+        youtube: "YouTube 频道"
+      },
+      ja: {
+        bio: "MOD、ツール＆ゲーム開発",
+        discord: "Discord サーバーに参加",
+        patreon: "Patreon で支援",
+        afdian: "Afdian (爱发电) で支援",
+        buymeacoffee: "Coffee を奢る",
+        boosty: "Boosty で支援",
+        nexusmods: "NexusMods ページ",
+        github: "GitHub リポジトリ",
+        youtube: "YouTube チャンネル"
+      }
+    };
+
+    function setLanguage(lang) {
+      const data = translations[lang];
+      if (!data) return;
+
+      document.getElementById('bio-text').textContent = data.bio;
+      document.getElementById('link-discord').textContent = data.discord;
+      document.getElementById('link-patreon').textContent = data.patreon;
+      document.getElementById('link-afdian').textContent = data.afdian;
+      document.getElementById('link-buymeacoffee').textContent = data.buymeacoffee;
+      document.getElementById('link-boosty').textContent = data.boosty;
+      document.getElementById('link-nexusmods').textContent = data.nexusmods;
+      document.getElementById('link-github').textContent = data.github;
+      document.getElementById('link-youtube').textContent = data.youtube;
+
+      // Butonların aktiflik durumunu güncelle
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === lang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
